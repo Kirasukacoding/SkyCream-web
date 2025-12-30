@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+            * {
+            margin: 0;
+            /* padding: 0; */
+            /* box-sizing: border-box; */
+            font-family: Arial, sans-serif;
+        }
+
+        :root {
+            --primary-color: #2b5288;
+            --secondary-color: #e5e0d9;
+            --accent-color: #0a1931;
+            /* contoh {
+            background: var(--accent-color)
+            } */
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-color);
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            box-sizing: border-box;
+            /* border-bottom: var(--accent-color) 3px solid; */
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+            color: var(--primary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 10px;
+            border-radius: 50px;
+            background-color: var(--secondary-color);
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            /* border: var(--accent-color) 2px solid; */
+
+        }
+
+        /* OPENING */
+
+        .pembukaan {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-items: flex-start;
+            height: 80vh;
+            background-color: var(--primary-color);
+            text-align: center;
+            margin-top: 100px;
+            color: var(--secondary-color);
+
+        }
+
+        .textpembukaan {
+            margin-left: 100px;
+            text-align: left;
+            font-size: 100%;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 10px 35px;
+            background-color: var(--secondary-color);
+            color: var(--accent-color);
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        /* ABOUT US */
+
+        .img-about img {
+            display: flex;
+            width: 400px;
+            height: auto;
+            border: var(--accent-color) 2px solid;
+            padding: 5px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 50px;
+        }
+
+        .aboutus {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--secondary-color);
+            color: var(--accent-color);
+            padding: 50px;
+            
+            text-align: center;
+
+        }
+
+        .About {
+            margin-top: 50px;
+            padding: 10px;
+            text-align: center;
+            text-align: left;
+            /* width: 100%; */
+            margin-left: 100px;
+        }
+
+        /* MENU */
+
+        .menu {
+            background-color: var(--secondary-color);
+            padding: 10px;
+            padding-bottom: 30px;
+        }
+
+        .all-card {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            /* background-color: var(--accent-color); */
+            /* padding: 50px; */
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            /* border-radius: 10px; */
+            margin-bottom: 5px;
+            /* border: var(--accent-color) 2px solid; */
+        }
+
+        .card {
+            /* border: var(--accent-color) 2px solid; */
+            padding: 1px;
+            /* border-radius: 20px; */
+            width: 200px;
+            text-align: center;
+            margin: 1\x;
+            /* background-color: var(--secondary-color); */
+            /* font-weight: bold; */
+            /* font-size: 16px; */
+            color: var(--accent-color);
+            text-align: left;
+            font-size: small;
+        }
+
+        /* TESTIMONIALS */
+
+        .testimonials {
+            background-color: var(--secondary-color);
+            padding: 10px;
+            padding-bottom: 30px;
+        }
+        
+        .all-testimonial {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .testimonial {
+            border: var(--accent-color) 2px solid;
+            padding: 20px;
+            border-radius: 20px;
+            width: 250px;
+            text-align: center;
+            margin: 10px;
+            background-color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 16px;
+            color: var(--accent-color);
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer-content p {
+            margin: 5px 0;
+        }
+</style>
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">
+            <h1>SKYLAR</h1>
+        </div>
+
+        <div>
+            <ul>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Menu</li>
+                <li><a href="#"></a>Testimonials</li>
+                <li><a href="#"></a>Gallery</li>
+                <li><a href="#"></a>Contact</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PEMBUKAAN -->
+    <div class="pembukaan">
+        <div class="textpembukaan">
+            <p style="font-weight: bold; font-size: 30px; margin-bottom: 10px;">WELCOME TO</p>
+            <p style="font-size: 80px; font-weight: bold; margin-bottom: 10px; margin-top: 10px;">SKYLAR CREAM!</p>
+            <p>Skylar is yummy for your treat!
+                Get your favorite here.
+            </p>
+            <div class="cta">
+                <p>Get Started</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT US -->
+    <div class="aboutus">
+        <div class="img-about">
+            <img src="galery/IMG_3.JPG" alt="">
+        </div>
+        <div class="About">
+            <p style="font-weight: bold; font-size: 80px;">About Us</p>
+            <p style="font-size: 20px;">Skylar Cream is a premium ice cream brand dedicated <br>to providing the finest
+                flavors and textures. ur
+                mission is to<br> bring joy and satisfaction through our delicious creations.</p>
+        </div>
+    </div>
+
+    <!-- MENU -->
+    <div class="menu">
+        <div class="text-menu">
+            <p style="font-weight: bold; font-size: 80px; text-align: center; margin-top: 50px; margin-bottom: 20px;">
+                Our Menu</p>
+        </div>
+        <div class="all-card">
+            <div class="card" style="transform: rotate(-3deg);">
+                <img src="galery/IMG_5.JPG" alt="">
+                <p>Blueberry ice cream</p>
+            </div>
+
+            <div class="card">
+                <p>Blueberry ice cream</p>
+                <img src="galery/IMG_6.JPG" alt="">
+            </div>
+
+            <div class="card" style="transform: rotate(3deg);">
+                <img src="galery/IMG_13.JPG" alt="">
+                <p>Blueberry ice cream</p>
+            </div>
+
+            <div class="card">
+                <p>Blueberry ice cream</p>
+                <img src="galery/IMG_24.JPG" alt="">
+            </div>  
+            
+            <div class="card" style="transform: rotate(-3deg);">
+                <img src="galery/IMG_9.JPG" alt="">
+                <p>Blueberry ice cream</p>
+            </div>
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <div class="testimonials">
+            <p style="font-weight: bold; font-size: 80px; text-align: center; margin-top: 50px; margin-bottom: 20px;">
+                Testimonials</p>
+            <div class="all-testimonial">
+                <div class="testimonial">
+                    <p>"The best ice cream I've ever tasted!"</p>
+                    <p>ngorang</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>"Delicious and creamy, a must try!"</p>
+                    <p>Sholeh</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>"I love the variety of flavors!"</p>
+                    <p>Sholehah</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GALERY -->
+
+        <!-- CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h2>SKYLAR CREAM</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+                <!-- SOCIAL MEDIA -->
+                <!-- Add social media icons here -->
+
+            </div>
+
+            <!-- COPYRIGHT -->
+            &copy; 2024 Skylar Cream. All rights reserved.
+        </footer>
+
+    </body>
+
+</html>
