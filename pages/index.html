@@ -210,6 +210,28 @@
             color: var(--accent-color);
         }
 
+        /* GALERY */
+
+        .galery {
+            background-color: var(--secondary-color);
+            padding: 10px;
+            padding-bottom: 30px;
+        }
+        .all-galery {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .galery-item img {
+            width: 300px;
+            height: auto;
+            border: var(--accent-color) 2px solid;
+            padding: 5px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
         /* FOOTER */
 
         footer {
@@ -223,6 +245,10 @@
         footer-content p {
             margin: 5px 0;
         }
+
+        
+
+
 </style>
 
 </head>
@@ -236,11 +262,11 @@
 
         <div>
             <ul>
-                <li><a href="#"></a>About</li>
-                <li><a href="#"></a>Menu</li>
-                <li><a href="#"></a>Testimonials</li>
-                <li><a href="#"></a>Gallery</li>
-                <li><a href="#"></a>Contact</li>
+                <li><a href="./pages/about.html"></a>About</li>
+                <li><a href="pages/menu.html"></a>Menu</li>
+                <li><a href="/pages/testimonials.html"></a>Testimonials</li>
+                <li><a href="/pages/gallery.html"></a>Gallery</li>
+                <li><a href="/pages/contact.html"></a>Contact</li>
             </ul>
         </div>
     </div>
@@ -262,7 +288,7 @@
     <!-- ABOUT US -->
     <div class="aboutus">
         <div class="img-about">
-            <img src="galery/IMG_3.JPG" alt="">
+            <img src="/images/galle/IMG_3.JPG" alt="">
         </div>
         <div class="About">
             <p style="font-weight: bold; font-size: 80px;">About Us</p>
@@ -280,27 +306,27 @@
         </div>
         <div class="all-card">
             <div class="card" style="transform: rotate(-3deg);">
-                <img src="galery/IMG_5.JPG" alt="">
+                <img src="/images/galle/IMG_5.JPG" alt="">
                 <p>Blueberry ice cream</p>
             </div>
 
             <div class="card">
                 <p>Blueberry ice cream</p>
-                <img src="galery/IMG_6.JPG" alt="">
+                <img src="/images/galle/IMG_6.JPG" alt="">
             </div>
 
             <div class="card" style="transform: rotate(3deg);">
-                <img src="galery/IMG_13.JPG" alt="">
+                <img src="/images/galle/IMG_13.JPG" alt="">
                 <p>Blueberry ice cream</p>
             </div>
 
             <div class="card">
                 <p>Blueberry ice cream</p>
-                <img src="galery/IMG_24.JPG" alt="">
+                <img src="/images/galle/IMG_24.JPG" alt="">
             </div>  
             
             <div class="card" style="transform: rotate(-3deg);">
-                <img src="galery/IMG_9.JPG" alt="">
+                <img src="/images/galle/IMG_9.JPG" alt="">
                 <p>Blueberry ice cream</p>
             </div>
         </div>
@@ -328,6 +354,27 @@
         </div>
 
         <!-- GALERY -->
+
+        <div class="galery">
+            <p style="font-weight: bold; font-size: 80px; text-align: center; margin-top: 50px; margin-bottom: 20px;">
+                Galery</p>
+            <div class="all-galery">
+                <div class="galery-item">
+                    <img src="/images/galle/IMG_1.JPG" alt="">
+                </div>
+
+                <div class="galery-item">
+                    <img src="/images/galle/IMG_2.JPG" alt="">
+                </div>
+
+                <div class="galery-item">
+                    <img src="/images/galle/IMG_3.JPG" alt="">
+                </div>
+
+                <div class="galery-item">
+                    <img src="/images/galle/IMG_4.JPG" alt="">
+                </div>
+            </div>
 
         <!-- CONTACT -->
 
